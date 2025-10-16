@@ -9,10 +9,10 @@ public class Answer
     [MaxLength(5000)] public required string Content { get; set; }
     [MaxLength(36)] public required string UserId { get; set; }
     [MaxLength(300)] public required string UserDisplayName { get; set; }
-    public DateTime CreateAt { get; set; }=DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? UpdatedAt { get; set; }
     public bool Accepted { get; set; }
-    
+
     // Navigation properties
     [MaxLength(36)] public required string QuestionId { get; set; }
     [JsonIgnore] public Question Question { get; set; } = null!;

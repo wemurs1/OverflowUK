@@ -10,23 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9f17043-a483-417e-a9be-ff290ef7373d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Common/AuthExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/WolverineExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/hero.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/VotingButtons.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/SideMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/ThemeToggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dictionaries/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.ServiceDefaults/Overflow.ServiceDefaults.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.ServiceDefaults/Overflow.ServiceDefaults.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/SearchService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/SearchService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Models/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Models/Answer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +72,20 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/source/repos/OverflowBase/Overflow/infra&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/source/repos/OverflowBase/Overflow/webapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/source/repos/OverflowBase/Overflow/webapp/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -158,6 +170,11 @@
       <workItem from="1759821611537" duration="86000" />
       <workItem from="1759852443232" duration="3076000" />
       <workItem from="1759997187489" duration="11308000" />
+      <workItem from="1760341141477" duration="27334000" />
+      <workItem from="1760512314180" duration="12660000" />
+      <workItem from="1760568812414" duration="2579000" />
+      <workItem from="1760571408852" duration="17000" />
+      <workItem from="1760597538973" duration="13323000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 2">
       <option name="closed" value="true" />
