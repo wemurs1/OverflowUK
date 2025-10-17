@@ -18,7 +18,12 @@ builder.Services.AddMemoryCache();
 builder.Services.AddScoped<TagService>();
 builder.Services.AddKeycloakAuthentication();
 
-builder.AddNpgsqlDbContext<QuestionDbContext>("questionDb");
+var connString = builder.Configuration.GetConnectionString("questionDb");
+
+builder.Services.AddDbContext<QuestionDbContext>(options =>
+{
+    options.UseNpgsql(connString);
+}, optionsLifetime: ServiceLifetime.Singleton);
 
 await builder.UseWolverineWithRabbitMqAsync(opts =>
 {
