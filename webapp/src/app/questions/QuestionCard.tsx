@@ -4,6 +4,7 @@ import {Chip} from "@heroui/chip";
 import {Avatar} from "@heroui/avatar";
 import clsx from "clsx";
 import {CheckIcon} from "@heroicons/react/24/outline";
+import {timeAgo} from "@/lib/util";
 
 
 type Props = {
@@ -23,7 +24,7 @@ export default function QuestionCard({question}: Props) {
                         'p-1': question.answerCount === 0,
                     })}>
                         {question.hasAcceptedAnswer && (
-                            <CheckIcon  className='h-4 w-4' strokeWidth={4}/>
+                            <CheckIcon className='h-4 w-4' strokeWidth={4}/>
                         )}
                         {question.answerCount} {question.answerCount === 1 ? 'answer' : 'answers'}
                     </span>
@@ -49,7 +50,7 @@ export default function QuestionCard({question}: Props) {
                         <div className='text-sm flex items-center gap-2'>
                             <Avatar className='h-6 w-6' color='secondary' name={question.askerDisplayName.charAt(0)}/>
                             <Link href={`/profiles/${question.askerId}`}>{question.askerDisplayName}</Link>
-                            <span>asked {question.createdAt}</span>
+                            <span>asked {timeAgo(question.createdAt)}</span>
                         </div>
                     </div>
                 </div>
