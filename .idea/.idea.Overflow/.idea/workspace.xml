@@ -10,32 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9f17043-a483-417e-a9be-ff290ef7373d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagsHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/SearchInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/error-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/hooks/useTagStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionService/Controllers/TestController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/AuthTestButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/LoginButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/RegisterButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/UserMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/auth-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/types/next-auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/session/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/session/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/error-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/error-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/util.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +177,8 @@
       <workItem from="1760708621209" duration="6121000" />
       <workItem from="1760882366645" duration="2736000" />
       <workItem from="1760942865143" duration="6219000" />
-      <workItem from="1760969780867" duration="5127000" />
+      <workItem from="1760969780867" duration="6462000" />
+      <workItem from="1761030690104" duration="17552000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 2">
       <option name="closed" value="true" />
@@ -240,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760685680558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="End of section 8">
+      <option name="closed" value="true" />
+      <created>1760978640889</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760978640889</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +269,8 @@
     <MESSAGE value="End of section 5" />
     <MESSAGE value="End of section 7" />
     <MESSAGE value="Corrected the spelling of a field in the Answer table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected the spelling of a field in the Answer table" />
+    <MESSAGE value="End of section 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
