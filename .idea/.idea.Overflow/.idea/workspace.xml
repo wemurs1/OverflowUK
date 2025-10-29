@@ -10,32 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9f17043-a483-417e-a9be-ff290ef7373d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/api/delete-image/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/api/sign-image/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/DeleteQuestionButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/edit/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/ask/QuestionForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/ask/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/rte/MenuBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/rte/RichTextEditor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/cloudinary.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/schemas/answerSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/schemas/questionSchema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/hooks/useAnswerStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/util.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +171,7 @@
       <workItem from="1761290271931" duration="12340000" />
       <workItem from="1761485382771" duration="4561000" />
       <workItem from="1761587368525" duration="2582000" />
-      <workItem from="1761741856010" duration="2475000" />
+      <workItem from="1761741856010" duration="6290000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 2">
       <option name="closed" value="true" />
@@ -265,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761065111528</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="End of section 10">
+      <option name="closed" value="true" />
+      <created>1761744361978</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761744361978</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +280,8 @@
     <MESSAGE value="Corrected the spelling of a field in the Answer table" />
     <MESSAGE value="End of section 8" />
     <MESSAGE value="End of section 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of section 9" />
+    <MESSAGE value="End of section 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
