@@ -12,7 +12,7 @@ type Props = {
 
 export default function QuestionHeader({tag, total}: Props) {
 
-    const selectedTag = useTagStore(state => state.getTagBySlug(tag))
+    const selectedTag = useTagStore(state => state.getTagBySlug(tag ?? ''))
     const tabs = [
         {key: 'newest', label: 'Newest'},
         {key: 'active', label: 'Active'},

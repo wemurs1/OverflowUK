@@ -4,7 +4,7 @@ import {Chip} from "@heroui/chip";
 import {Avatar} from "@heroui/avatar";
 import clsx from "clsx";
 import {CheckIcon} from "@heroicons/react/24/outline";
-import {timeAgo} from "@/lib/util";
+import {stripHtmlTages, timeAgo} from "@/lib/util";
 
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
 export default function QuestionCard({question}: Props) {
 
     return (
-        <div className='flex gap-6 px-6'>
+        <div className='flex gap-6 px-6 w-full'>
             <div className='flex flex-col items-end text-sm gap-3 min-w-[6rem]'>
                 <div>{question.votes} {question.votes === 1 ? 'vote' : 'votes'}</div>
                 <div className={clsx('flex justify-end rounded', {
@@ -32,14 +32,16 @@ export default function QuestionCard({question}: Props) {
                 <div>{question.viewCount} {question.viewCount === 1 ? 'view' : 'views'}</div>
             </div>
             <div className='flex flex-1 justify-between min-h-[8rem]'>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 w-full'>
                     <Link href={`/questions/${question.id}`}
                           className='text-primary font-semibold hover:underline first-letter:uppercase'>
                         {question.title}
                     </Link>
                     <div
-                        className='line-clamp-2' dangerouslySetInnerHTML={{__html: question.content}}
-                    />
+                        className='line-clamp-2'
+                    >
+                        {stripHtmlTages(question.content)}
+                    </div>
                     <div className='flex justify-between pt-2'>
                         <div className='flex gap-2'>
                             {question.tagSlugs.map(slug => (
