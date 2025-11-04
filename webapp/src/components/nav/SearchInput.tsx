@@ -6,12 +6,13 @@ import {useEffect, useRef, useState} from "react";
 import {Question} from "@/lib/types";
 import {searchQuestions} from "@/lib/actions/question-actions";
 import {Listbox, ListboxItem} from "@heroui/listbox";
+import {Spinner} from "@heroui/spinner";
 
 export default function SearchInput() {
     const [query, setQuery] = useState('');
-    // const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
     const [results, setResults] = useState<Question[] | null>(null);
-    const [showDropdown, setSHowDropdown] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false);
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
@@ -19,16 +20,16 @@ export default function SearchInput() {
 
         if (!query) {
             setResults(null);
-            setSHowDropdown(false);
+            setShowDropdown(false);
             return;
         }
 
         timeoutRef.current = setTimeout(async () => {
-            // setLoading(true);
+            setLoading(true);
             const {data: questions} = await searchQuestions(query);
             setResults(questions);
-            // setLoading(false);
-            setSHowDropdown(true);
+            setLoading(false);
+            setShowDropdown(true);
         }, 300)
     }, [query])
 
@@ -45,6 +46,7 @@ export default function SearchInput() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder='Search'
+                endContent={loading && <Spinner size='sm'/>}
             />
             {showDropdown && results && (
                 <div

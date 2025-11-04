@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {AcademicCapIcon, MagnifyingGlassIcon} from "@heroicons/react/24/solid";
+import {AcademicCapIcon} from "@heroicons/react/24/solid";
 import ThemeToggle from "@/components/nav/ThemeToggle";
 import SearchInput from "@/components/nav/SearchInput";
 import LoginButton from "@/components/nav/LoginButton";

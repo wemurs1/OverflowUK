@@ -10,12 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9f17043-a483-417e-a9be-ff290ef7373d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/hooks/useAnswerStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/AuthExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/AuthExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/ask/QuestionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/ask/QuestionForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/SearchInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/SearchInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/auth-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/auth-actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/cloudinary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/cloudinary.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +81,7 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/source/repos/OverflowBase/Overflow/webapp/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -171,7 +185,13 @@
       <workItem from="1761290271931" duration="12340000" />
       <workItem from="1761485382771" duration="4561000" />
       <workItem from="1761587368525" duration="2582000" />
-      <workItem from="1761741856010" duration="6290000" />
+      <workItem from="1761741856010" duration="6662000" />
+      <workItem from="1761750345089" duration="45000" />
+      <workItem from="1761752066393" duration="88000" />
+      <workItem from="1762171831835" duration="5262000" />
+      <workItem from="1762187874731" duration="3608000" />
+      <workItem from="1762244184950" duration="1712000" />
+      <workItem from="1762246003170" duration="6358000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 2">
       <option name="closed" value="true" />
@@ -253,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761744361978</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Edit / Delete questions">
+      <option name="closed" value="true" />
+      <created>1761748165937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761748165937</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +309,8 @@
     <MESSAGE value="End of section 8" />
     <MESSAGE value="End of section 9" />
     <MESSAGE value="End of section 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of section 10" />
+    <MESSAGE value="Edit / Delete questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit / Delete questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

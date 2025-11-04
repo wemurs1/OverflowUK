@@ -4,7 +4,6 @@ import {Answer, Question} from "@/lib/types";
 import {fetchClient} from "@/lib/fetchClient";
 import {QuestionSchema} from "@/lib/schemas/questionSchema";
 import {AnswerSchema} from "@/lib/schemas/answerSchema";
-import {id} from "zod/locales";
 import {revalidatePath} from "next/cache";
 
 export async function getQuestions(tag?: string) {
