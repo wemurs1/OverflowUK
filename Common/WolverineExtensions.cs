@@ -18,6 +18,34 @@ public static class WolverineExtensions
         this IHostApplicationBuilder builder,
         Action<WolverineOptions> configureMessaging)
     {
+        var isEfDesignTime = AppDomain.CurrentDomain.FriendlyName.StartsWith("ef", StringComparison.OrdinalIgnoreCase);
+
+        if (!isEfDesignTime)
+        {
+            var retryPolicy = Policy
+                .Handle<BrokerUnreachableException>()
+                .Or<SocketException>()
+                .WaitAndRetryAsync(
+                    retryCount: 5,
+                    retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
+                    (exception, timeSpan, retryCount) =>
+                    {
+                        Console.WriteLine(
+                            $"Retry attempt {retryCount} failed. Retrying in {timeSpan.Seconds} seconds...");
+                    });
+
+            await retryPolicy.ExecuteAsync(async () =>
+            {
+                var endpoint = builder.Configuration.GetConnectionString("messaging") ??
+                               throw new InvalidOperationException("messaging connection string not found");
+                var factory = new ConnectionFactory
+                {
+                    Uri = new Uri(endpoint)
+                };
+                await using var connection = await factory.CreateConnectionAsync();
+            });
+        }
+
         builder.Services.AddOpenTelemetry().WithTracing(traceProviderBuilder =>
         {
             traceProviderBuilder.SetResourceBuilder(ResourceBuilder.CreateDefault()
@@ -25,31 +53,9 @@ public static class WolverineExtensions
                 .AddSource("Wolverine");
         });
 
-        var retryPolicy = Policy
-            .Handle<BrokerUnreachableException>()
-            .Or<SocketException>()
-            .WaitAndRetryAsync(
-                retryCount: 5,
-                retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
-                (exception, timeSpan, retryCount) =>
-                {
-                    Console.WriteLine($"Retry attempt {retryCount} failed. Retrying in {timeSpan.Seconds} seconds...");
-                });
-
-        await retryPolicy.ExecuteAsync(async () =>
-        {
-            var endpoint = builder.Configuration.GetConnectionString("messaging") ??
-                           throw new InvalidOperationException("messaging connection string not found");
-            var factory = new ConnectionFactory
-            {
-                Uri = new Uri(endpoint)
-            };
-            await using var connection = await factory.CreateConnectionAsync();
-        });
-
         builder.UseWolverine(opts =>
         {
-            opts.UseRabbitMqUsingNamedConnection("messaging").AutoProvision().DeclareQueue("questions");
+            opts.UseRabbitMqUsingNamedConnection("messaging").AutoProvision().UseConventionalRouting();
             configureMessaging(opts);
         });
     }

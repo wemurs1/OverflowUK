@@ -23,6 +23,7 @@ public static class AuthExtensions
                     ]
                 };
             });
+        services.AddAuthorization();
         return services;
     }
 }
