@@ -19,7 +19,7 @@ export default function UserMenu({user}: Props) {
                 </div>
             </DropdownTrigger>
             <DropdownMenu>
-                <DropdownItem key='edit'>Edit Profile</DropdownItem>
+                <DropdownItem href={`/profiles/${user.id}`} key='edit'>My Profile</DropdownItem>
                 <DropdownItem key='logout' className='text-danger' color='danger'
                               onClick={() => signOut({redirectTo: '/'})}>Sign Out</DropdownItem>
             </DropdownMenu>
