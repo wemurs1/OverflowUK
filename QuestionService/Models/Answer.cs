@@ -11,6 +11,7 @@ public class Answer
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? UpdatedAt { get; set; }
     public bool Accepted { get; set; }
+    public int Votes { get; set; }
 
     // Navigation properties
     [MaxLength(36)] public required string QuestionId { get; set; }

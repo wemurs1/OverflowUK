@@ -7,11 +7,15 @@ namespace QuestionService.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class TagsController(QuestionDbContext db): ControllerBase
+public class TagsController(QuestionDbContext db) : ControllerBase
 {
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<Tag>>> GetTags()
+    public async Task<ActionResult<IReadOnlyList<Tag>>> GetTags(string? sort)
     {
-        return await db.Tags.OrderBy(x => x.Name).ToListAsync();
+        var query = db.Tags.AsQueryable();
+        query = sort == "popular"
+            ? query.OrderByDescending(x => x.UsageCount).ThenBy(x => x.Name)
+            : query.OrderBy(x => x.Name);
+        return await query.ToListAsync();
     }
 }

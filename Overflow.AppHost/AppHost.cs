@@ -10,7 +10,7 @@ var keycloak = builder.AddKeycloak("keycloak", 6001)
     .WithRealmImport("../infra/realms")
     .WithEnvironment("KC_HTTP_ENABLED", "true")
     .WithEnvironment("KC_HOSTNAME_STRICT", "false")
-    .WithEnvironment("KC_PROXY_HEADERS","xforwarded")
+    .WithEnvironment("KC_PROXY_HEADERS", "xforwarded")
     .WithEnvironment("VIRTUAL_HOST", "id.overflow.local")
     .WithEnvironment("VIRTUAL_PORT", "8080");
 
@@ -35,6 +35,10 @@ var typesenseContainer = typesense.GetEndpoint("typesense");
 var questionDb = postgres.AddDatabase("questionDb");
 
 var profileDb = postgres.AddDatabase("profileDb");
+
+var statDb = postgres.AddDatabase("statDb");
+
+var voteDb = postgres.AddDatabase("voteDb");
 
 var rabbitMq = builder.AddRabbitMQ("messaging")
     .WithDataVolume("rabbitmq-data")
@@ -63,6 +67,20 @@ var profileService = builder.AddProject<Projects.ProfileService>("profile-svc")
     .WaitFor(profileDb)
     .WaitFor(rabbitMq);
 
+var statService = builder.AddProject<Projects.StatsService>("stats-svc")
+    .WithReference(statDb)
+    .WithReference(rabbitMq)
+    .WaitFor(statDb)
+    .WaitFor(rabbitMq);
+
+var votesService = builder.AddProject<Projects.VoteService>("vote-svc")
+    .WithReference(keycloak)
+    .WithReference(voteDb)
+    .WithReference(rabbitMq)
+    .WaitFor(keycloak)
+    .WaitFor(voteDb)
+    .WaitFor(rabbitMq);
+
 var yarp = builder.AddYarp("gateway")
     .WithConfiguration(yarpBuilder =>
     {
@@ -71,6 +89,8 @@ var yarp = builder.AddYarp("gateway")
         yarpBuilder.AddRoute("/tags/{**catch-all}", questionService);
         yarpBuilder.AddRoute("/search/{**catch-all}", searchService);
         yarpBuilder.AddRoute("/profiles/{**catch-all}", profileService);
+        yarpBuilder.AddRoute("/stats/{**catch-all}", statService);
+        yarpBuilder.AddRoute("/votes/{**catch-all}", votesService);
     })
     .WithEnvironment("ASPNETCORE_URLS", "http://*:8001")
     .WithEndpoint(port: 8001, targetPort: 8001, scheme: "http", name: "gateway", isExternal: true)
@@ -91,7 +111,7 @@ if (!builder.Environment.IsDevelopment())
         .WithEndpoint(80, 80, "nginx", isExternal: true)
         .WithEndpoint(443, 443, "nginx-ssl", isExternal: true)
         .WithBindMount("/var/run/docker.sock", "/tmp/docker.sock", true)
-        .WithBindMount("../infra/devcerts","/etc/nginx/certs", true);
+        .WithBindMount("../infra/devcerts", "/etc/nginx/certs", true);
 }
 
 builder.Build().Run();

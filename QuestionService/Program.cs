@@ -2,7 +2,6 @@ using Common;
 using Microsoft.EntityFrameworkCore;
 using QuestionService.Data;
 using QuestionService.Services;
-using Wolverine.RabbitMQ;
 
 var builder = WebApplication.CreateBuilder(args);
 
