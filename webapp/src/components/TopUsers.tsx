@@ -13,7 +13,7 @@ export default async function TopUsers() {
             <div className='flex flex-col px-6 gap-3'>
                 {users?.map(u => (
                     <div className='flex justify-between items-center' key={u.userId}>
-                        <div>{u.profile.displayName}</div>
+                        <div>{u.profile?.displayName}</div>
                         <div>{u.delta}</div>
                     </div>
                 ))}
