@@ -14,27 +14,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9f17043-a483-417e-a9be-ff290ef7373d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Common/MigrationRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/Pagination.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestionService/RequestHelpers/QuestionsQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/AppPagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatsService/Extensions/PostgresDbExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Common.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileService/ProfileService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/ProfileService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoteService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VoteService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoteService/VoteService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VoteService/VoteService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/AuthExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/AuthExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatsService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StatsService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/profiles/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/AppPagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/AppPagination.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/components/TopUsers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/TopUsers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/TrendingTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/TrendingTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/auth-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/auth-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/next-auth.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/next-auth.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +41,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b2e36d6c03b438ea7fce209e0363c86b1e00/eb/fdcd7c42/RequestDelegateFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7b8c93872a6630cad8be31c0bbb3f21ffc274a4e8bf081b76fc09649b93393ee/AspireEFPostgreSqlExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///source/repos/OverflowBase/Overflow/QuestionService/Models/Answer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestionService/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StatsService/appsettings.json" root0="FORCE_HIGHLIGHTING" />
@@ -283,7 +273,8 @@
       <workItem from="1762850758562" duration="22187000" />
       <workItem from="1762937636667" duration="7491000" />
       <workItem from="1763047973939" duration="29000" />
-      <workItem from="1763048029308" duration="14146000" />
+      <workItem from="1763048029308" duration="16738000" />
+      <workItem from="1763122610694" duration="6377000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 2">
       <option name="closed" value="true" />
@@ -397,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762941475909</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="End of section 14">
+      <option name="closed" value="true" />
+      <created>1763118038535</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1763118038536</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +428,8 @@
     <MESSAGE value="End of section 11" />
     <MESSAGE value="End of section 12" />
     <MESSAGE value="End of section 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of section 13" />
+    <MESSAGE value="End of section 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

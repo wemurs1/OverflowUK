@@ -10,7 +10,7 @@ export default async function Page({params}: { params: Params }) {
     const currentUser = await getCurrentUser();
     const {id} = await params;
     const {data: profile, error} = await getProfileById(id);
-    const currentUserProfile = currentUser.id === id;
+    const currentUserProfile = currentUser?.id === id;
     if (error) handleError(error);
     if (!profile) return notFound();
 

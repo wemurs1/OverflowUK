@@ -3,7 +3,6 @@
 import {useEffect, useState} from "react";
 import {useRouter, useSearchParams} from "next/navigation";
 import {Button} from "@heroui/button";
-import {pages} from "next/dist/build/templates/app-page";
 import {Pagination} from "@heroui/pagination";
 
 type Props = {
